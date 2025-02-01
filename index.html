@@ -29,14 +29,95 @@
         <span>Alarado</span>
       </div>
       <nav>
-        <ul>
+        <ul class="sidebar">
+          <li class="close-btn" onclick="hideSidebar()">
+            <a href="#"
+              ><svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="7.16113"
+                  y="23.2176"
+                  width="22"
+                  height="3"
+                  rx="1.5"
+                  transform="rotate(-45 7.16113 23.2176)"
+                  fill="#223344"
+                />
+                <rect
+                  x="9.28223"
+                  y="7.66116"
+                  width="22"
+                  height="3"
+                  rx="1.5"
+                  transform="rotate(45 9.28223 7.66116)"
+                  fill="#223344"
+                /></svg
+            ></a>
+          </li>
           <li><a href="#">About us</a></li>
           <li><a href="#">Product</a></li>
           <li><a href="#">Resource</a></li>
           <li><a href="#">Contact</a></li>
+          <button class="mode-toggler-btn">
+            <img
+              src="./resources/Moon_fill_light.svg"
+              alt="Moon image for dark mode"
+              class="light-mode-img"
+            /><img
+              src="./resources/Sun_fill.svg"
+              alt="Sun image for dark mode"
+              class="light-mode-img"
+            />
+          </button>
+        </ul>
+        <ul>
+          <li class="hide-on-mobile"><a href="#">About us</a></li>
+          <li class="hide-on-mobile"><a href="#">Product</a></li>
+          <li class="hide-on-mobile"><a href="#">Resource</a></li>
+          <li class="hide-on-mobile"><a href="#">Contact</a></li>
+          <li class="menu-btn" onclick="showSidebar()">
+            <a href="#"
+              ><svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="5"
+                  y="8"
+                  width="22"
+                  height="3"
+                  rx="1.5"
+                  fill="#223344"
+                />
+                <rect
+                  x="5"
+                  y="15"
+                  width="22"
+                  height="3"
+                  rx="1.5"
+                  fill="#223344"
+                />
+                <rect
+                  x="5"
+                  y="22"
+                  width="22"
+                  height="3"
+                  rx="1.5"
+                  fill="#223344"
+                /></svg
+            ></a>
+          </li>
         </ul>
       </nav>
-      <button class="mode-toggler-btn">
+      <button class="mode-toggler-btn hide-on-mobile">
         <img
           src="./resources/Moon_fill_light.svg"
           alt="Moon image for dark mode"
@@ -92,5 +173,17 @@
         </picture>
       </div>
     </main>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </body>
 </html>
