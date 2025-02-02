@@ -96,7 +96,7 @@ textarea:not([rows]) {
   --start-btn-text-color: #ffffff;
 
   /* Typography */
-  --haeding-size: 3.75rem;
+  --heading-size: 3.75rem;
   --body-size: 1.125rem;
   --button-text-size: 1rem;
   --small-text-size: 0.875rem;
@@ -145,7 +145,7 @@ nav ul {
 nav a {
   text-decoration: none;
   color: var(--text-color);
-  font-size: var(--body-size);
+  font-size: var(--button-text-size);
   font-weight: 600;
   text-underline-offset: 8px;
 }
@@ -195,13 +195,28 @@ nav a:hover {
   align-items: center;
   border-radius: 1rem;
   border: none;
-  background-color: var(--text-color);
+  background-color: #223344;
   cursor: pointer;
 }
 
-.mode-toggler-btn img:last-child {
-  background-color: var(--bg-color);
+.mode-toggler-btn .moon-svg {
+  background-color: transparent;
+}
+
+.mode-toggler-btn .sun-svg {
+  background-color: #ffffff;
   border-radius: 50%;
+}
+
+.dark-mode .mode-toggler-btn .moon-svg {
+  background-color: #ffffff;
+  border-radius: 50%;
+  fill: #223344;
+}
+
+.dark-mode .mode-toggler-btn .sun-svg {
+  background-color: transparent;
+  fill: #ffffff;
 }
 
 main {
@@ -233,7 +248,7 @@ main {
 
 h1 {
   color: var(--text-color);
-  font-size: clamp(2.5rem, 5vw, var(--haeding-size));
+  font-size: clamp(2.5rem, 5vw, var(--heading-size));
   font-weight: 700;
   line-height: 1.5;
 }
