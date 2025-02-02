@@ -209,7 +209,7 @@ main {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .main-content {
@@ -233,7 +233,7 @@ main {
 
 h1 {
   color: var(--text-color);
-  font-size: clamp(2.5rem, 3vw, var(--haeding-size));
+  font-size: clamp(2.5rem, 5vw, var(--haeding-size));
   font-weight: 700;
   line-height: 1.5;
 }
@@ -332,6 +332,7 @@ h1 {
       "hero-img"
       "main-content";
     gap: 1.5rem;
+    padding: 1.5rem;
   }
 
   .main-content {
