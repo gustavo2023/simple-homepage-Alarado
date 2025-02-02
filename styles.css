@@ -341,6 +341,10 @@ h1 {
   .hero-img-container {
     grid-area: hero-img;
   }
+
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 40rem) {
