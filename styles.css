@@ -104,8 +104,8 @@ textarea:not([rows]) {
 
 .dark-mode {
   --bg-color: #111729;
-  --text-color: #ffffff;
-  --hover-color: #ffffff;
+  --text-color: #f2f9fe;
+  --hover-color: #f2f9fe;
 }
 
 body {
@@ -204,19 +204,19 @@ nav a:hover {
 }
 
 .mode-toggler-btn .sun-svg {
-  background-color: #ffffff;
+  background-color: #f2f9fe;
   border-radius: 50%;
 }
 
 .dark-mode .mode-toggler-btn .moon-svg {
-  background-color: #ffffff;
+  background-color: #f2f9fe;
   border-radius: 50%;
   fill: #223344;
 }
 
 .dark-mode .mode-toggler-btn .sun-svg {
   background-color: transparent;
-  fill: #ffffff;
+  fill: #f2f9fe;
 }
 
 main {
