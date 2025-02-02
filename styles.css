@@ -92,8 +92,8 @@ textarea:not([rows]) {
   --bg-color: #f2f9fe;
   --text-color: #223344;
   --button-color: #2a4dd0;
+  --hover-color: #2a4dd0;
   --start-btn-text-color: #ffffff;
-  --gray: #909193;
 
   /* Typography */
   --haeding-size: 3.75rem;
@@ -105,6 +105,7 @@ textarea:not([rows]) {
 .dark-mode {
   --bg-color: #111729;
   --text-color: #ffffff;
+  --hover-color: #ffffff;
 }
 
 body {
@@ -151,8 +152,8 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-  color: var(--button-color);
-  text-decoration-color: var(--button-color);
+  color: var(--hover-color);
+  text-decoration-color: var(--hover-color);
   text-decoration-thickness: 2px;
 }
 
@@ -199,7 +200,7 @@ nav a:hover {
 }
 
 .mode-toggler-btn img:last-child {
-  background-color: var(--start-btn-text-color);
+  background-color: var(--bg-color);
   border-radius: 50%;
 }
 
@@ -272,8 +273,8 @@ h1 {
   cursor: pointer;
   text-underline-offset: 8px;
   text-decoration: underline;
-  color: var(--button-color);
-  text-decoration-color: var(--button-color);
+  color: var(--hover-color);
+  text-decoration-color: var(--hover-color);
   text-decoration-thickness: 2px;
 }
 
@@ -339,16 +340,6 @@ h1 {
 
   .hero-img-container {
     grid-area: hero-img;
-  }
-
-  nav a:hover {
-    color: var(--start-btn-text-color);
-    text-decoration-color: var(--start-btn-text-color);
-  }
-
-  .demo-btn {
-    color: var(--start-btn-text-color);
-    text-decoration-color: var(--start-btn-text-color);
   }
 }
 
