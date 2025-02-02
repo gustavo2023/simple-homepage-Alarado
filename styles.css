@@ -197,6 +197,26 @@ nav a:hover {
   border: none;
   background-color: #223344;
   cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mode-toggler-btn:active {
+  animation: fade 0.5s linear;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .mode-toggler-btn .moon-svg {
@@ -231,6 +251,18 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  animation: slideInFromBottom 1s ease-out;
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .container {
@@ -293,6 +325,16 @@ h1 {
   text-decoration-thickness: 2px;
 }
 
+button,
+a {
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover:not(.mode-toggler-btn),
+a:hover {
+  transform: scale(1.05);
+}
+
 .advantages-container {
   display: flex;
   gap: 2rem;
@@ -315,6 +357,18 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: slideInFromRight 1s ease-out;
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .hero-img-container img {
